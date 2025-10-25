@@ -356,3 +356,108 @@ section {
 .contact-form .btn:hover {
   background: #b18455;
 }
+
+/* ====================== RESPONSIVE FIXES ====================== */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 6%;
+  }
+
+  .home {
+    gap: 4rem;
+    padding: 8rem 6%;
+  }
+
+  .coffees-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 2rem 4%;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 1rem 1.5rem;
+  }
+
+  section {
+    padding: 8rem 5%;
+  }
+
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-content p {
+    font-size: 1.6rem;
+  }
+
+  .about {
+    background-size: cover;
+    padding: 8rem 5%;
+  }
+
+  .coffees-container {
+    grid-template-columns: 1fr;
+  }
+
+  .review-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 6rem 4%;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .heading {
+    font-size: 4.5rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.4rem;
+  }
+}
